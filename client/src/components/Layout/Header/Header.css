@@ -1,0 +1,110 @@
+/* Overall navbar styling */
+.navbar {
+  background: linear-gradient(135deg, #3b4cca, #536dfe); /* Premium gradient */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 0 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+/* Container for content alignment */
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 20px;
+}
+
+/* Left side: logo and brand text */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align left */
+  flex: 1; /* Take up space to push other elements to their positions */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-logo {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+.brand-text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Center section: navigation items */
+.navbar-center {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the nav items */
+  flex: 2; /* Allow it to take up more space */
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 25px;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fdd835; /* Golden hover effect */
+}
+
+/* Right section: user & logout button */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align right */
+}
+
+.nav-user {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+.logout-btn {
+  background-color: #fdd835; /* Golden color */
+  color: #3b4cca;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #fbc02d;
+}
